@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
 
 function App() {
+  const name = 'Arslan Amir'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Git payford
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello from my react app
-        </a>
-      </header>
+    <div className="container">
+        <h1> Hello from react {name}</h1>
+        <Header title={12}/>
     </div>
   );
 }
