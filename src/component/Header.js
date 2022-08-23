@@ -6,7 +6,7 @@ import Button from "./Button"
 // patter is defaultProps = { title: PropTypes.string}
 const Header = ({title}) => {
   const HeaderClick = () => {
-    console.log('Click from header')
+    console.log('Header Click')
   }
 
   return (
