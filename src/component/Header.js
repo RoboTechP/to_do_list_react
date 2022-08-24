@@ -4,7 +4,7 @@ import Button from "./Button"
 // {title} "This is how you do a prop tile"
 // (props) "if you want to do it with prop.name-of-the-prop"
 // patter is defaultProps = { title: PropTypes.string}
-const Header = ({title}) => {
+const Header = ({title, onAdd, showAdd}) => {
   const HeaderClick = () => {
     console.log('Header Click')
   }
@@ -12,7 +12,7 @@ const Header = ({title}) => {
   return (
     <div className="header"> 
     <h1> {title}</h1>
-    <Button onClick = {HeaderClick} className='btn'/>
+    <Button onClick = {onAdd} color= {showAdd ? 'red': 'green'} className='btn' text={showAdd? 'Close': 'Add'}/>
    
     
     </div>
